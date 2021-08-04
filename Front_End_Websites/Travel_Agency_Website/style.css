@@ -17,6 +17,27 @@ body {
   --white: #FFFFFF;
 }
 
+/* text_styles */
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  color: var(--gray);
+}
+
+/* header */
+
 .menu {
   display: flex;
   align-items: center;
@@ -56,6 +77,8 @@ body {
   outline: inherit;
 }
 
+/* main landing section */
+
 .landing_page {
   display: flex;
   align-items: center;
@@ -78,7 +101,6 @@ body {
   color: var(--blue);
   font-family: 'Volkhov', serif;
   font-weight: 900;
-  font-size: 3.3em;
   margin: 0;
 }
 
@@ -89,7 +111,6 @@ body {
 }
 
 .landing_text {
-  color: var(--gray);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -127,3 +148,169 @@ body {
   border-radius: 10em;
 }
 
+/* main categories section */
+
+.categories {
+  background-image: url(imgs/categories_decoration.svg);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
+  margin-top: 12em;
+  padding: 2em 0;
+}
+
+.categories_subtitle {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.categories_title {
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  color: var(--blue);
+  margin: .2em 0;
+}
+
+.categories_cards {
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.categories_card {
+  margin: 0 2em;
+  text-align: center;
+}
+
+.categories_card_img {
+  height: 8.125em;
+  width: 8.125em;
+}
+
+.categories_card:nth-child(2) {
+  position: relative;
+  width: 250px;
+}
+
+.categories_card_elements_decoration {
+  position: relative;
+  background: var(--white);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 
+  0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 
+  0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 
+  0px 20px 13px rgba(0, 0, 0, 0.01), 
+  0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+  0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  z-index: 99;
+  border-radius: 2.25em;
+  padding: 1.3em 0;
+}
+
+.categories_card_decoration {
+  background: var(--orange);
+  height: 6.25em;
+  width: 6.25em;
+  position: absolute;
+  right: 11.875em;
+  bottom: -1.25em;
+  border-radius: 1.875em 0px 0.625em;
+  z-index: 15;
+}
+
+.categories_card_title {
+  color: var(--blue);
+}
+
+.categories_card_text {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* main destinations section */
+
+.destinations {
+  margin-top: 7em;
+  margin-bottom: 20em;
+}
+
+.destinations_cards { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.destinations_card {
+  position: relative;
+  margin: 0 2em;
+}
+
+.destinations_card_img {
+  object-fit: cover;
+  object-position: bottom;
+  height: 400px;
+  width: 300px;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) 
+  drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) 
+  drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) 
+  drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) 
+  drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) 
+  drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  border-radius: 24px;
+}
+
+.destinations_subtitle {
+  color: var(--gray);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.destinations_title {
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  color: var(--blue);
+}
+
+.destinations_card_elements {
+  position: absolute;
+  background: var(--white);
+  width: 100%;
+  bottom: 0;
+  border-radius: 0px 0px 24px 24px;
+}
+
+.destinations_card_information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1em;
+  padding: 0;
+}
+
+.destinations_card_name {
+  font-family: 'Poppins', sans-serif;
+  color: var(--gray);
+  margin: 1em 0 0;
+}
+
+.destinations_card_price {
+  font-family: 'Poppins', sans-serif;
+  color: var(--gray);
+  margin: 1em 0 0;
+}
+
+.destinations_card_footer {
+  display: flex;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.destinations_card_days {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 1em;
+}
